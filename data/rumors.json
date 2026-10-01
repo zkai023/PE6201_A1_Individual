@@ -1,0 +1,26 @@
+{
+  "description": "20 real football transfer rumours from 2022-2024. ground_truth TRUE = later confirmed; FALSE = never materialised. The FALSE rumours (R11-R20) are deliberately phrased with a FEE or WINDOW that contradicts the knowledge base (release clauses / transfer-window rules), so the Layered-RAG can REFUTE them - not just confirm true ones.",
+  "rumors": [
+    {"rumor_id": "R01", "text": "Kylian Mbappe has completed his free transfer to Real Madrid after his PSG contract expired.", "ground_truth": "TRUE"},
+    {"rumor_id": "R02", "text": "Jude Bellingham joins Real Madrid from Borussia Dortmund for an initial GBP 88.5m.", "ground_truth": "TRUE"},
+    {"rumor_id": "R03", "text": "Harry Kane signs for Bayern Munich in a GBP 100m deal from Tottenham.", "ground_truth": "TRUE"},
+    {"rumor_id": "R04", "text": "Declan Rice completes a GBP 105m move from West Ham to Arsenal.", "ground_truth": "TRUE"},
+    {"rumor_id": "R05", "text": "Chelsea agree a British-record GBP 115m fee for Moises Caicedo from Brighton.", "ground_truth": "TRUE"},
+    {"rumor_id": "R06", "text": "Liverpool sign Dominik Szoboszlai from RB Leipzig for GBP 60m, triggering his release clause.", "ground_truth": "TRUE"},
+    {"rumor_id": "R07", "text": "Manchester City complete the signing of Erling Haaland from Borussia Dortmund for his GBP 51m release clause.", "ground_truth": "TRUE"},
+    {"rumor_id": "R08", "text": "Lionel Messi joins Inter Miami on a free transfer from Paris Saint-Germain.", "ground_truth": "TRUE"},
+    {"rumor_id": "R09", "text": "Cristiano Ronaldo signs for Saudi club Al Nassr on a free transfer.", "ground_truth": "TRUE"},
+    {"rumor_id": "R10", "text": "Neymar leaves PSG for Al Hilal in a EUR 90m deal to the Saudi Pro League.", "ground_truth": "TRUE"},
+
+    {"rumor_id": "R11", "text": "Barcelona wonderkid Gavi is set to join Manchester United for GBP 80m this summer.", "ground_truth": "FALSE"},
+    {"rumor_id": "R12", "text": "Newcastle are close to signing Enzo Fernandez from Benfica for GBP 60m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R13", "text": "Arsenal agree a GBP 50m deal for Antoine Griezmann from Atletico Madrid.", "ground_truth": "FALSE"},
+    {"rumor_id": "R14", "text": "Al Hilal are in talks to sign Karim Benzema from Real Madrid for GBP 40m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R15", "text": "Liverpool want to sign Joao Felix from Benfica for GBP 70m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R16", "text": "Manchester City will sign Ruben Dias from Benfica for GBP 30m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R17", "text": "Liverpool are pushing for Aurelien Tchouameni from Monaco for GBP 50m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R18", "text": "Manchester United will sign Dominik Szoboszlai from RB Leipzig for GBP 40m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R19", "text": "Arsenal target Christopher Nkunku from Leipzig for GBP 45m.", "ground_truth": "FALSE"},
+    {"rumor_id": "R20", "text": "Real Madrid will sign Kylian Mbappe in the November transfer window for GBP 30m.", "ground_truth": "FALSE"}
+  ]
+}

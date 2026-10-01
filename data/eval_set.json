@@ -1,0 +1,15 @@
+{
+  "description": "10-case evaluation set for the L1/L2 dual-layer judge. L1 = classification (TRUE_RUMOR / FALSE_RUMOR / UNVERIFIABLE). L2 = faithfulness (is the alert grounded in a retrieved knowledge-base doc). expected_grounded TRUE means a doc supports the claim/refutation; FALSE means no doc supports it and the system must NOT assert a grounded confirmation. The FALSE cases are refuted by a CONTRACT clause doc (C*) or a REGULATION doc (REG*), demonstrating the layered-RAG refutation power.",
+  "cases": [
+    {"case_id": "C01", "rumor_id": "R01", "rumor": "Kylian Mbappe has completed his free transfer to Real Madrid after his PSG contract expired.", "expected_l1": "TRUE_RUMOR", "expected_grounded": true, "expected_evidence": ["D01"]},
+    {"case_id": "C02", "rumor_id": "R02", "rumor": "Jude Bellingham joins Real Madrid from Borussia Dortmund for an initial GBP 88.5m.", "expected_l1": "TRUE_RUMOR", "expected_grounded": true, "expected_evidence": ["D02"]},
+    {"case_id": "C03", "rumor_id": "R03", "rumor": "Harry Kane signs for Bayern Munich in a GBP 100m deal from Tottenham.", "expected_l1": "TRUE_RUMOR", "expected_grounded": true, "expected_evidence": ["D03"]},
+    {"case_id": "C04", "rumor_id": "R05", "rumor": "Chelsea agree a British-record GBP 115m fee for Moises Caicedo from Brighton.", "expected_l1": "TRUE_RUMOR", "expected_grounded": true, "expected_evidence": ["D05"]},
+    {"case_id": "C05", "rumor_id": "R08", "rumor": "Lionel Messi joins Inter Miami on a free transfer from Paris Saint-Germain.", "expected_l1": "TRUE_RUMOR", "expected_grounded": true, "expected_evidence": ["D09"]},
+    {"case_id": "C06", "rumor_id": "R11", "rumor": "Barcelona wonderkid Gavi is set to join Manchester United for GBP 80m this summer.", "expected_l1": "FALSE_RUMOR", "expected_grounded": true, "expected_evidence": ["C01"]},
+    {"case_id": "C07", "rumor_id": "R12", "rumor": "Newcastle are close to signing Enzo Fernandez from Benfica for GBP 60m.", "expected_l1": "FALSE_RUMOR", "expected_grounded": true, "expected_evidence": ["C04"]},
+    {"case_id": "C08", "rumor_id": "R15", "rumor": "Liverpool want to sign Joao Felix from Benfica for GBP 70m.", "expected_l1": "FALSE_RUMOR", "expected_grounded": true, "expected_evidence": ["C05"]},
+    {"case_id": "C09", "rumor_id": "R16", "rumor": "Manchester City will sign Ruben Dias from Benfica for GBP 30m.", "expected_l1": "FALSE_RUMOR", "expected_grounded": true, "expected_evidence": ["C06"]},
+    {"case_id": "C10", "rumor_id": "R20", "rumor": "Real Madrid will sign Kylian Mbappe in the November transfer window for GBP 30m.", "expected_l1": "FALSE_RUMOR", "expected_grounded": true, "expected_evidence": ["REG01"]}
+  ]
+}

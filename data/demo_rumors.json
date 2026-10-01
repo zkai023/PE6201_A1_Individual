@@ -1,0 +1,149 @@
+[
+  {
+    "id": "D01",
+    "label": "CONFIRMED — Bellingham → Real Madrid (GBP 88.5m)",
+    "category": "CONFIRMED (true rumour matches a record)",
+    "text": "Jude Bellingham completes his move to Real Madrid from Borussia Dortmund for GBP 88.5m.",
+    "expected": {"verdict": "CONFIRMED", "evidence": ["D02"], "action": "PUBLISH_GROUNDED",
+                  "note": "Record D02 confirms Bellingham -> Real Madrid. Shows a TRUE rumour is published."}
+  },
+  {
+    "id": "D02",
+    "label": "CONFIRMED — Kane → Bayern (GBP 100m)",
+    "category": "CONFIRMED (true rumour matches a record)",
+    "text": "Harry Kane signs for Bayern Munich from Tottenham for about GBP 100m.",
+    "expected": {"verdict": "CONFIRMED", "evidence": ["D03"], "action": "PUBLISH_GROUNDED",
+                  "note": "Record D03 confirms Kane -> Bayern. The grounded publish path."}
+  },
+  {
+    "id": "D03",
+    "label": "CONFIRMED — Caicedo → Chelsea (GBP 115m)",
+    "category": "CONFIRMED (true rumour matches a record)",
+    "text": "Chelsea complete the signing of Moises Caicedo from Brighton for GBP 115m.",
+    "expected": {"verdict": "CONFIRMED", "evidence": ["D05"], "action": "PUBLISH_GROUNDED",
+                  "note": "Record D05 confirms Caicedo -> Chelsea."}
+  },
+  {
+    "id": "D04",
+    "label": "CONFIRMED — Mbappe → Real Madrid (free)",
+    "category": "CONFIRMED (free-agent record)",
+    "text": "Kylian Mbappe joins Real Madrid on a free transfer after his PSG contract expired.",
+    "expected": {"verdict": "CONFIRMED", "evidence": ["D01"], "action": "PUBLISH_GROUNDED",
+                  "note": "Mbappe is a free agent (C10); record D01 confirms the free move to Real Madrid."}
+  },
+  {
+    "id": "D05",
+    "label": "CONFIRMED — Haaland → Man City (release clause)",
+    "category": "CONFIRMED (true rumour matches a record)",
+    "text": "Erling Haaland joins Manchester City for his GBP 51m release clause from Borussia Dortmund.",
+    "expected": {"verdict": "CONFIRMED", "evidence": ["D08"], "action": "PUBLISH_GROUNDED",
+                  "note": "Fee GBP 51m ~ EUR 59.7m is ABOVE 0.9x clause (EUR 60m), so not refuted; record D08 confirms."}
+  },
+
+  {
+    "id": "F01",
+    "label": "FALSE (clause) — Gavi → Man United GBP 80m",
+    "category": "FALSE by release clause (fee below clause)",
+    "text": "Barcelona wonderkid Gavi is set to join Manchester United for GBP 80m this summer.",
+    "expected": {"verdict": "FALSE", "evidence": ["C01"], "action": "HOLD",
+                  "note": "Gavi's clause is EUR 1bn; GBP 80m (~EUR 93.6m) is far below it -> refuted by C01."}
+  },
+  {
+    "id": "F02",
+    "label": "FALSE (clause) — Enzo → Arsenal GBP 50m",
+    "category": "FALSE by release clause (fee below clause)",
+    "text": "Chelsea agree a GBP 50m deal to sign Enzo Fernandez from Benfica.",
+    "expected": {"verdict": "FALSE", "evidence": ["C04"], "action": "HOLD",
+                  "note": "Enzo's Benfica clause EUR 120m; GBP 50m (~EUR 58.5m) below it -> refuted by C04."}
+  },
+  {
+    "id": "F03",
+    "label": "FALSE (clause) — Ruben Dias → Man United GBP 40m",
+    "category": "FALSE by release clause (fee below clause)",
+    "text": "Manchester United are close to signing Ruben Dias from Benfica for GBP 40m.",
+    "expected": {"verdict": "FALSE", "evidence": ["C06"], "action": "HOLD",
+                  "note": "Dias's clause EUR 68m; GBP 40m (~EUR 46.8m) below it -> refuted by C06."}
+  },
+  {
+    "id": "F04",
+    "label": "FALSE (clause) — Tchouameni → Liverpool GBP 50m",
+    "category": "FALSE by release clause (fee below clause)",
+    "text": "Liverpool want to sign Aurelien Tchouameni from AS Monaco for GBP 50m.",
+    "expected": {"verdict": "FALSE", "evidence": ["C07"], "action": "HOLD",
+                  "note": "Tchouameni's clause EUR 80m; GBP 50m (~EUR 58.5m) below it -> refuted by C07."}
+  },
+  {
+    "id": "F05",
+    "label": "FALSE (clause) — Haaland → Man United GBP 40m",
+    "category": "FALSE by release clause (fee below clause)",
+    "text": "Manchester United close to signing Erling Haaland from Borussia Dortmund for GBP 40m.",
+    "expected": {"verdict": "FALSE", "evidence": ["C11"], "action": "HOLD",
+                  "note": "Haaland's clause EUR 60m; GBP 40m (~EUR 46.8m) below it -> refuted by C11 (clause check runs before the record)."}
+  },
+  {
+    "id": "F06",
+    "label": "FALSE (clause-as-free) — Gavi → Man City on a free",
+    "category": "FALSE (player has a clause, cannot be a free transfer)",
+    "text": "Gavi is leaving Barcelona to join Manchester City on a free transfer.",
+    "expected": {"verdict": "FALSE", "evidence": ["C01"], "action": "HOLD",
+                  "note": "Gavi has a EUR 1bn release clause, so 'free transfer' is inconsistent -> refuted by C01."}
+  },
+  {
+    "id": "F07",
+    "label": "FALSE (free-agent+fee) — Mbappe → Arsenal GBP 30m",
+    "category": "FALSE (free agent but a fee is claimed)",
+    "text": "Kylian Mbappe is set to join Arsenal from Paris Saint-Germain for GBP 30m in the summer window.",
+    "expected": {"verdict": "FALSE", "evidence": ["C10"], "action": "HOLD",
+                  "note": "Mbappe is a free agent (C10); a GBP 30m fee is inconsistent -> refuted by C10."}
+  },
+  {
+    "id": "F08",
+    "label": "FALSE (window) — Mbappe → Real Madrid in November",
+    "category": "FALSE by transfer window (REG01)",
+    "text": "Real Madrid will sign Kylian Mbappe in the November transfer window on a free transfer.",
+    "expected": {"verdict": "FALSE", "evidence": ["REG01"], "action": "HOLD",
+                  "note": "November is outside the FIFA windows -> refuted by REG01 (window check fires before any record)."}
+  },
+  {
+    "id": "F09",
+    "label": "FALSE (window) — Haaland → Man City in March GBP 40m",
+    "category": "FALSE by transfer window (REG01)",
+    "text": "Manchester City are close to signing Erling Haaland in the March window for GBP 40m.",
+    "expected": {"verdict": "FALSE", "evidence": ["REG01"], "action": "HOLD",
+                  "note": "March is outside the FIFA windows -> refuted by REG01."}
+  },
+  {
+    "id": "F10",
+    "label": "FALSE (stayed) — Osimhen → Chelsea GBP 90m",
+    "category": "FALSE (record shows player STAYED)",
+    "text": "Victor Osimhen completes a GBP 90m move to Chelsea from Napoli.",
+    "expected": {"verdict": "FALSE", "evidence": ["D12"], "action": "HOLD",
+                  "note": "Record D12 shows Osimhen STAYED at Napoli -> the rumored move is false."}
+  },
+  {
+    "id": "F11",
+    "label": "FALSE (stayed) — Salah → Al Hilal GBP 100m",
+    "category": "FALSE (record shows player STAYED)",
+    "text": "Mohamed Salah joins Al Hilal for GBP 100m from Liverpool.",
+    "expected": {"verdict": "FALSE", "evidence": ["D13"], "action": "HOLD",
+                  "note": "Record D13 shows Salah STAYED at Liverpool -> the rumored move is false."}
+  },
+
+  {
+    "id": "U01",
+    "label": "UNVERIFIED (out-of-corpus) — Alvarez → Atletico",
+    "category": "UNVERIFIED (player not in knowledge base)",
+    "text": "Rumour has it that Julian Alvarez could potentially join Atletico Madrid for GBP 82m, but it is just speculation.",
+    "expected": {"verdict": "UNVERIFIED", "evidence": [], "action": "HOLD",
+                  "layer1": "LOW_CONFIDENCE",
+                  "note": "Alvarez is not in the KB; fee is plausible but unsupported -> honestly UNVERIFIED (and Layer-1 flags LOW_CONFIDENCE)."}
+  },
+  {
+    "id": "U02",
+    "label": "UNVERIFIED (out-of-corpus) — Bruno → Bayern GBP 100m",
+    "category": "UNVERIFIED (player not in knowledge base)",
+    "text": "Bruno Fernandes leaves Manchester United for a GBP 100m move to Bayern Munich.",
+    "expected": {"verdict": "UNVERIFIED", "evidence": [], "action": "HOLD",
+                  "note": "Bruno Fernandes is not in the KB; nothing supports or refutes it -> UNVERIFIED (honest)."}
+  }
+]

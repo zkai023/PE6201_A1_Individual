@@ -1,0 +1,166 @@
+[
+  {
+    "doc_id": "REG01", "layer": "regulation", "title": "FIFA Transfer Windows",
+    "text": "Player registrations may only be completed during the two officially designated transfer windows: the summer window (e.g. 10 June to 1 September 2023) and the winter window (1 to 31 January). A transfer announced or registered in a month outside these windows, such as November, is invalid.",
+    "source": "FIFA Regulations on the Status and Transfer of Players"
+  },
+  {
+    "doc_id": "REG02", "layer": "regulation", "title": "Release Clause Enforceability",
+    "text": "A release clause (termination fee) is a binding contractual amount. To sign a player who has a release clause, the buying club must pay the EXACT clause amount to the player, who triggers it. A rumour that the buying club acquires the player for a normal transfer fee BELOW the clause is inconsistent with the contract.",
+    "source": "FIFA / domestic league contract law"
+  },
+  {
+    "doc_id": "REG03", "layer": "regulation", "title": "One Registration Per Season",
+    "text": "Under FIFA rules a player may be registered with only one club at a time and, within a single season, with a maximum of three clubs, with limits on in-season transfers. A rumour of a player simultaneously registered at two clubs is invalid.",
+    "source": "FIFA Regulations, registration article"
+  },
+  {
+    "doc_id": "REG04", "layer": "regulation", "title": "Financial Fair Play / PSR",
+    "text": "UEFA Financial Fair Play and the Premier League Profitability and Sustainability Rules require clubs to keep spending within defined limits. A rumour of an extreme fee plus wages that would clearly breach these limits is implausible (soft signal).",
+    "source": "UEFA FFPR / Premier League PSR"
+  },
+
+  {
+    "doc_id": "C01", "layer": "contract", "player": "Gavi", "club": "Barcelona",
+    "release_clause_eur": 1000000000,
+    "note": "Gavi's 2023 Barcelona contract carried a EUR 1,000,000,000 release clause.",
+    "text": "Gavi is under contract at Barcelona with a release clause of EUR 1,000,000,000 (one billion euros). Any club wishing to sign him must pay the full clause to the player.",
+    "source": "Marca / Barcelona contract filings"
+  },
+  {
+    "doc_id": "C02", "layer": "contract", "player": "Antoine Griezmann", "club": "Atletico Madrid",
+    "release_clause_eur": 125000000,
+    "note": "Griezmann's Atletico release clause was EUR 125m.",
+    "text": "Antoine Griezmann's Atletico Madrid contract included a release clause of EUR 125,000,000. He later left for free to Real Sociedad in 2024.",
+    "source": "AS / Atletico filings"
+  },
+  {
+    "doc_id": "C03", "layer": "contract", "player": "Karim Benzema", "club": "Real Madrid",
+    "release_clause_eur": 1000000000,
+    "note": "Benzema's Real Madrid clause was EUR 1,000,000,000.",
+    "text": "Karim Benzema's Real Madrid contract contained a release clause of EUR 1,000,000,000. He left for Al-Ittihad in Saudi Arabia in 2023.",
+    "source": "Marca"
+  },
+  {
+    "doc_id": "C04", "layer": "contract", "player": "Enzo Fernandez", "club": "Benfica",
+    "release_clause_eur": 120000000,
+    "note": "Enzo's Benfica release clause was EUR 120m, triggered by Chelsea in Jan 2023.",
+    "text": "Enzo Fernandez had a EUR 120,000,000 release clause at Benfica. Chelsea triggered it in January 2023, a then British-record fee.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "C05", "layer": "contract", "player": "Joao Felix", "club": "Benfica",
+    "release_clause_eur": 120000000,
+    "note": "Felix's Benfica release clause was EUR 120m.",
+    "text": "Joao Felix's Benfica release clause was EUR 120,000,000; Atletico Madrid paid it in 2019.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "C06", "layer": "contract", "player": "Ruben Dias", "club": "Benfica",
+    "release_clause_eur": 68000000,
+    "note": "Dias's Benfica release clause was EUR 68m.",
+    "text": "Ruben Dias had a EUR 68,000,000 release clause at Benfica; Manchester City paid it in 2020.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "C07", "layer": "contract", "player": "Aurelien Tchouameni", "club": "AS Monaco",
+    "release_clause_eur": 80000000,
+    "note": "Tchouameni's Monaco release clause was EUR 80m.",
+    "text": "Aurelien Tchouameni's AS Monaco contract carried a EUR 80,000,000 release clause; Real Madrid triggered it in 2022.",
+    "source": "L'Equipe"
+  },
+  {
+    "doc_id": "C08", "layer": "contract", "player": "Dominik Szoboszlai", "club": "RB Leipzig",
+    "release_clause_eur": 60000000,
+    "note": "Szoboszlai's Leipzig release clause was EUR 60m.",
+    "text": "Dominik Szoboszlai's RB Leipzig contract included a EUR 60,000,000 release clause; Liverpool triggered it in 2023.",
+    "source": "Liverpool FC"
+  },
+  {
+    "doc_id": "C09", "layer": "contract", "player": "Christopher Nkunku", "club": "RB Leipzig",
+    "release_clause_eur": 60000000,
+    "note": "Nkunku's Leipzig release clause was EUR 60m.",
+    "text": "Christopher Nkunku's RB Leipzig release clause was EUR 60,000,000; Chelsea triggered it in 2023.",
+    "source": "Chelsea FC"
+  },
+  {
+    "doc_id": "C10", "layer": "contract", "player": "Kylian Mbappe", "club": "Paris Saint-Germain",
+    "release_clause_eur": 0,
+    "note": "Mbappe had NO release clause; his PSG contract expired June 2024, making him a free agent.",
+    "text": "Kylian Mbappe had no release clause at Paris Saint-Germain. His contract expired on 30 June 2024, so he left as a free agent to Real Madrid.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "C11", "layer": "contract", "player": "Erling Haaland", "club": "Borussia Dortmund",
+    "release_clause_eur": 60000000,
+    "note": "Haaland's Dortmund release clause was about EUR 60m (GBP 51m); City triggered it in 2022.",
+    "text": "Erling Haaland's Borussia Dortmund contract carried a release clause of about EUR 60,000,000 (roughly GBP 51m); Manchester City triggered it in 2022.",
+    "source": "Manchester City FC"
+  },
+
+  {
+    "doc_id": "D01", "layer": "record", "player": "Kylian Mbappe", "from_club": "Paris Saint-Germain", "to_club": "Real Madrid", "fee": "Free transfer", "status": "CONFIRMED", "date": "2024-06-03",
+    "text": "Real Madrid announced the signing of Kylian Mbappe on a free transfer from PSG on 3 June 2024 after his contract expired.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D02", "layer": "record", "player": "Jude Bellingham", "from_club": "Borussia Dortmund", "to_club": "Real Madrid", "fee": "GBP 88.5m", "status": "CONFIRMED", "date": "2023-06-14",
+    "text": "Real Madrid signed Jude Bellingham from Borussia Dortmund for an initial GBP 88.5m in June 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D03", "layer": "record", "player": "Harry Kane", "from_club": "Tottenham Hotspur", "to_club": "Bayern Munich", "fee": "GBP 100m", "status": "CONFIRMED", "date": "2023-08-12",
+    "text": "Bayern Munich completed the signing of Harry Kane from Tottenham for about GBP 100m in August 2023.",
+    "source": "Sky Sports"
+  },
+  {
+    "doc_id": "D04", "layer": "record", "player": "Declan Rice", "from_club": "West Ham United", "to_club": "Arsenal", "fee": "GBP 105m", "status": "CONFIRMED", "date": "2023-07-15",
+    "text": "Arsenal signed Declan Rice from West Ham for a club-record GBP 105m in July 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D05", "layer": "record", "player": "Moises Caicedo", "from_club": "Brighton & Hove Albion", "to_club": "Chelsea", "fee": "GBP 115m", "status": "CONFIRMED", "date": "2023-08-14",
+    "text": "Chelsea signed Moises Caicedo from Brighton for a British-record GBP 115m in August 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D06", "layer": "record", "player": "Dominik Szoboszlai", "from_club": "RB Leipzig", "to_club": "Liverpool", "fee": "GBP 60m", "status": "CONFIRMED", "date": "2023-07-02",
+    "text": "Liverpool signed Dominik Szoboszlai from RB Leipzig for GBP 60m in July 2023, activating his release clause.",
+    "source": "Liverpool FC"
+  },
+  {
+    "doc_id": "D07", "layer": "record", "player": "Alexis Mac Allister", "from_club": "Brighton & Hove Albion", "to_club": "Liverpool", "fee": "GBP 35m", "status": "CONFIRMED", "date": "2023-06-08",
+    "text": "Liverpool signed Alexis Mac Allister from Brighton for around GBP 35m in June 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D08", "layer": "record", "player": "Erling Haaland", "from_club": "Borussia Dortmund", "to_club": "Manchester City", "fee": "GBP 51m release clause", "status": "CONFIRMED", "date": "2022-07-01",
+    "text": "Manchester City signed Erling Haaland from Borussia Dortmund for his GBP 51m release clause in July 2022.",
+    "source": "Manchester City FC"
+  },
+  {
+    "doc_id": "D09", "layer": "record", "player": "Lionel Messi", "from_club": "Paris Saint-Germain", "to_club": "Inter Miami", "fee": "Free transfer", "status": "CONFIRMED", "date": "2023-06-07",
+    "text": "Lionel Messi joined Inter Miami on a free transfer from PSG in June 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D10", "layer": "record", "player": "Cristiano Ronaldo", "from_club": "Manchester United", "to_club": "Al Nassr", "fee": "Free transfer", "status": "CONFIRMED", "date": "2022-12-30",
+    "text": "Cristiano Ronaldo signed for Al Nassr on a free transfer in December 2022.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D11", "layer": "record", "player": "Neymar", "from_club": "Paris Saint-Germain", "to_club": "Al Hilal", "fee": "EUR 90m", "status": "CONFIRMED", "date": "2023-08-15",
+    "text": "Al Hilal signed Neymar from PSG for about EUR 90m in August 2023.",
+    "source": "BBC Sport"
+  },
+  {
+    "doc_id": "D12", "layer": "record", "player": "Victor Osimhen", "from_club": "Napoli", "to_club": "Napoli", "fee": "N/A (stayed)", "status": "STAYED", "date": "2024-06-30",
+    "text": "Victor Osimhen remained at Napoli for 2023-24 despite rumours linking him with Chelsea and PSG; he later joined Galatasaray on loan.",
+    "source": "Reuters"
+  },
+  {
+    "doc_id": "D13", "layer": "record", "player": "Mohamed Salah", "from_club": "Liverpool", "to_club": "Liverpool", "fee": "N/A (stayed)", "status": "STAYED", "date": "2024-06-30",
+    "text": "Mohamed Salah stayed at Liverpool through 2023-24; reports linking him with Al Hilal did not materialise.",
+    "source": "Liverpool FC"
+  }
+]
