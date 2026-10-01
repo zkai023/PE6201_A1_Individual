@@ -1,0 +1,10 @@
+# Core pipeline (src/run_all.py) runs on the Python standard library only — no required packages.
+# The pipeline works fully offline (MOCK mode) with zero dependencies.
+#
+# Optional: only if you prefer the official OpenAI SDK over the built-in urllib path
+# used by rag_pipeline.py. Even without it, setting OPENROUTER_API_KEY still works because
+# rag_pipeline.py calls the REST API directly via urllib.
+# openai>=1.0
+#
+# Demo UI (demo_app.py) — only needed for the recorded demo video:
+gradio>=4.0

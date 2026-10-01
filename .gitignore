@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+
+# Runtime outputs (regenerated on every run)
+outputs/
+output/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Editor / virtualenv (local only)
+.idea/
+.venv/
+venv/
+
+# OS / misc
+.DS_Store
+*.log
+
+# Local-only reference / duplicate docs (NOT part of the submission)
+README_CN.md        # Chinese deep-dive, author's reference only
+DEMO_SCRIPT.md      # demo video script, author's reference only
+REPORT.docx         # formatted report for NTULearn; REPORT.md is the repo copy
+
